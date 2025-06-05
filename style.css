@@ -131,7 +131,7 @@ body {
 }
 .cta-button:hover {
     transform: translateY(-3px);
-   box-shadow: 0 10px 30px rgba(20, 221, 70, 0.4);
+   box-shadow: 10px rgba(20, 221, 70, 0.4);
 }
 /* Sections */
 .section {
@@ -160,7 +160,7 @@ body {
 }
 /* About Section */
 .about {
-   background: var(--bg-light);
+   
 }
 .about-content {
     display: grid;
@@ -197,23 +197,37 @@ body {
     font-size: 1.1rem;
    line-height: 1.8;
 }
-.url {
-   cursor: url(myBall.cur),auto;
-}
 #socialsContainer{
    display: flex;
    justify-content: space-around;
+   margin-left: 80px;
+   margin-right: 80px;
 }
-.social{
-   width: 10px;
+.social {
+    color: var(--text-light);
+    text-decoration: none;
+    transition: color 0.3s ease;
+   position: relative;
 }
-.social:hover{
-   font-size: 48px;
-   text-shadow: 1px 1px 2px black, 0 0 25px rgb(8, 238, 77), 0 0 5px rgb(149, 204, 147);
+.social:hover {
+   color: var(--accent-color);
+}
+.social::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    bottom: -5px;
+    left: 0;
+    background: var(--gradient-2);
+   transition: width 0.3s ease;
+}
+.social:hover::after {
+   width: 100%;
 }
 /* Skills Section */
 .skills {
-   background: var(--gradient-3)
+   
 }
 .skills-grid {
     display: grid;
