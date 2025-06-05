@@ -204,9 +204,9 @@ body {
    margin-right: 80px;
 }
 .social {
-    color: var(--text-light);
-    text-decoration: none;
-    transition: color 0.3s ease;
+   color: var(--text-light);
+   text-decoration: none;
+   transition: color 0.3s ease;
    position: relative;
 }
 .social:hover {
