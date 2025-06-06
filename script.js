@@ -161,3 +161,4 @@ window.addEventListener('resize', () => {
         navMenu.style.background = 'none';
     }
 });
+//BG Animation
