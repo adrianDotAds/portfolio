@@ -1,14 +1,59 @@
+// Declare groupedElements outside the event listener
+const groupedElements = [];
+// Get all elements and group them (do this once, outside the event listener)
+const elements = document.getElementsByClassName('timeline-item');
+const content = document.getElementsByClassName('timeline-content');
+const jtitle = document.getElementsByClassName('job-title');
+const company = document.getElementsByClassName('company');
+const date = document.getElementsByClassName('date');
 
-    // Smooth scrolling for navigation links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
-        target.scrollIntoView({
-            behavior: 'smooth',
-            block: 'start'
-        });
+// Grouping
+for (let i = 0; i < elements.length; i++) {
+    groupedElements[i] = [
+        elements[i],
+        content[i],
+        jtitle[i],
+        company[i],
+        date[i]
+    ];
+}
+// Event listener to check clicks
+document.addEventListener('click', function(event) {
+    if (groupedElements[0].includes(event.target)) {
+        console.log('You clicked class 1 (first group)!');
+    }
+    if (groupedElements[1].includes(event.target)) {
+        console.log('You clicked class 2 (second group)!');
+    }
+    if (groupedElements[2].includes(event.target)) {
+        console.log('You clicked class 3 (third group)!');
+    }
+    if (groupedElements[3].includes(event.target)) {
+        console.log('You clicked class 4 (fourth group)!');
+    }
+        if (groupedElements[0].includes(event.target)) {
+        console.log('You clicked class 1 (first group)!');
+    }
+    if (groupedElements[1].includes(event.target)) {
+        console.log('You clicked class 2 (second group)!');
+    }
+    if (groupedElements[2].includes(event.target)) {
+        console.log('You clicked class 3 (third group)!');
+    }
+    if (groupedElements[3].includes(event.target)) {
+        console.log('You clicked class 4 (fourth group)!');
+    }
+});
+// Smooth scrolling for navigation links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+    const tar = document.querySelector(this.getAttribute('href'));
+    tar.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
     });
+});
 });
 // Navbar background opacity on scroll
 window.addEventListener('scroll', () => {
@@ -168,17 +213,6 @@ window.addEventListener('resize', () => {
 //     div.classList.add("roll-out-blurred-right");
 // };
 
-function showDescription(){
-
-
-    
-    const boxes = document.getElementsByClassName("timeline-content");
-
-    for (let i = 0; i < boxes.length; i++) {
-    boxes[i].classList.add("roll-out-blurred-left");
-    }
-}
-
 function hideDescription(){
     const boxes = document.getElementsByClassName("timeline-content");
 
@@ -186,5 +220,6 @@ function hideDescription(){
     boxes[i].classList.remove("roll-out-blurred-left");
     }
 }
+
 
 //BG Animation
