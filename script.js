@@ -161,4 +161,30 @@ window.addEventListener('resize', () => {
         navMenu.style.background = 'none';
     }
 });
+
+//Hovering Animation
+// const showDescription = () => {
+//     const div = document.getElementsByClassName("timeline-item");
+//     div.classList.add("roll-out-blurred-right");
+// };
+
+function showDescription(){
+
+
+    
+    const boxes = document.getElementsByClassName("timeline-content");
+
+    for (let i = 0; i < boxes.length; i++) {
+    boxes[i].classList.add("roll-out-blurred-left");
+    }
+}
+
+function hideDescription(){
+    const boxes = document.getElementsByClassName("timeline-content");
+
+    for (let i = 0; i < boxes.length; i++) {
+    boxes[i].classList.remove("roll-out-blurred-left");
+    }
+}
+
 //BG Animation
