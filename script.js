@@ -31,16 +31,16 @@ document.addEventListener('click', function(event) {
     if (groupedElements[3].includes(event.target)) {
         console.log('You clicked class 4 (fourth group)!');
     }
-        if (groupedElements[0].includes(event.target)) {
-        console.log('You clicked class 1 (first group)!');
+    if (groupedElements[4].includes(event.target)) {
+    console.log('You clicked class 1 (first group)!');
     }
-    if (groupedElements[1].includes(event.target)) {
+    if (groupedElements[5].includes(event.target)) {
         console.log('You clicked class 2 (second group)!');
     }
-    if (groupedElements[2].includes(event.target)) {
+    if (groupedElements[6].includes(event.target)) {
         console.log('You clicked class 3 (third group)!');
     }
-    if (groupedElements[3].includes(event.target)) {
+    if (groupedElements[7].includes(event.target)) {
         console.log('You clicked class 4 (fourth group)!');
     }
 });
