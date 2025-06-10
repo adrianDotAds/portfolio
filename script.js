@@ -25,25 +25,39 @@ document.addEventListener('click', function(event) {
         el[0].classList.add("roll-out-blurred-left");
     }
     if (groupedElements[1].includes(event.target)) {
-        console.log('You clicked class 2 (second group)!');
+        // Adding class name
+        const  el = document.getElementsByClassName("timeline-item");
+        el[1].classList.add("roll-out-blurred-right");
     }
     if (groupedElements[2].includes(event.target)) {
-        console.log('You clicked class 3 (third group)!');
+        // Adding class name
+        const  el = document.getElementsByClassName("timeline-item");
+        el[2].classList.add("roll-out-blurred-left");
     }
     if (groupedElements[3].includes(event.target)) {
-        console.log('You clicked class 4 (fourth group)!');
+        // Adding class name
+        const  el = document.getElementsByClassName("timeline-item");
+        el[3].classList.add("roll-out-blurred-right");
     }
     if (groupedElements[4].includes(event.target)) {
-        console.log('You clicked class 5 (first group)!');
+        // Adding class name
+        const  el = document.getElementsByClassName("timeline-item");
+        el[4].classList.add("roll-out-blurred-left");
     }
     if (groupedElements[5].includes(event.target)) {
-        console.log('You clicked class 6 (second group)!');
+        // Adding class name
+        const  el = document.getElementsByClassName("timeline-item");
+        el[5].classList.add("roll-out-blurred-right");
     }
     if (groupedElements[6].includes(event.target)) {
-        console.log('You clicked class 7 (third group)!');
+        // Adding class name
+        const  el = document.getElementsByClassName("timeline-item");
+        el[6].classList.add("roll-out-blurred-left");
     }
     if (groupedElements[7].includes(event.target)) {
-        console.log('You clicked class 8 (fourth group)!');
+        // Adding class name
+        const  el = document.getElementsByClassName("timeline-item");
+        el[7].classList.add("roll-out-blurred-right");
     }
 });
 // Smooth scrolling for navigation links
