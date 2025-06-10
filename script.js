@@ -20,7 +20,9 @@ for (let i = 0; i < elements.length; i++) {
 // Event listener to check clicks
 document.addEventListener('click', function(event) {
     if (groupedElements[0].includes(event.target)) {
-        console.log('You clicked class 1 (first group)!');
+        // Adding class name
+        const  el = document.getElementsByClassName("timeline-item");
+        el[0].classList.add("roll-out-blurred-left");
     }
     if (groupedElements[1].includes(event.target)) {
         console.log('You clicked class 2 (second group)!');
