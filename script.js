@@ -32,16 +32,16 @@ document.addEventListener('click', function(event) {
         console.log('You clicked class 4 (fourth group)!');
     }
     if (groupedElements[4].includes(event.target)) {
-    console.log('You clicked class 1 (first group)!');
+        console.log('You clicked class 5 (first group)!');
     }
     if (groupedElements[5].includes(event.target)) {
-        console.log('You clicked class 2 (second group)!');
+        console.log('You clicked class 6 (second group)!');
     }
     if (groupedElements[6].includes(event.target)) {
-        console.log('You clicked class 3 (third group)!');
+        console.log('You clicked class 7 (third group)!');
     }
     if (groupedElements[7].includes(event.target)) {
-        console.log('You clicked class 4 (fourth group)!');
+        console.log('You clicked class 8 (fourth group)!');
     }
 });
 // Smooth scrolling for navigation links
