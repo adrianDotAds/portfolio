@@ -21,42 +21,42 @@ for (let i = 0; i < elements.length; i++) {
 document.addEventListener('click', function(event) {
     if (groupedElements[0].includes(event.target)) {
         // Adding class name
-        const  el = document.getElementsByClassName("timeline-item");
+        const  el = document.getElementsByClassName("timeline-content");
         el[0].classList.add("roll-out-blurred-left");
     }
     if (groupedElements[1].includes(event.target)) {
         // Adding class name
-        const  el = document.getElementsByClassName("timeline-item");
+        const  el = document.getElementsByClassName("timeline-content");
         el[1].classList.add("roll-out-blurred-right");
     }
     if (groupedElements[2].includes(event.target)) {
         // Adding class name
-        const  el = document.getElementsByClassName("timeline-item");
+        const  el = document.getElementsByClassName("timeline-content");
         el[2].classList.add("roll-out-blurred-left");
     }
     if (groupedElements[3].includes(event.target)) {
         // Adding class name
-        const  el = document.getElementsByClassName("timeline-item");
+        const  el = document.getElementsByClassName("timeline-content");
         el[3].classList.add("roll-out-blurred-right");
     }
     if (groupedElements[4].includes(event.target)) {
         // Adding class name
-        const  el = document.getElementsByClassName("timeline-item");
+        const  el = document.getElementsByClassName("timeline-content");
         el[4].classList.add("roll-out-blurred-left");
     }
     if (groupedElements[5].includes(event.target)) {
         // Adding class name
-        const  el = document.getElementsByClassName("timeline-item");
+        const  el = document.getElementsByClassName("timeline-content");
         el[5].classList.add("roll-out-blurred-right");
     }
     if (groupedElements[6].includes(event.target)) {
         // Adding class name
-        const  el = document.getElementsByClassName("timeline-item");
+        const  el = document.getElementsByClassName("timeline-content");
         el[6].classList.add("roll-out-blurred-left");
     }
     if (groupedElements[7].includes(event.target)) {
         // Adding class name
-        const  el = document.getElementsByClassName("timeline-item");
+        const  el = document.getElementsByClassName("timeline-content");
         el[7].classList.add("roll-out-blurred-right");
     }
 });
