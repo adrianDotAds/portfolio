@@ -437,6 +437,17 @@ body {
     border-radius: 2px;
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
 }
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(45deg, transparent, rgba(255,255,255,0.3), transparent);
+    transform: rotate(45deg);
+   animation: shines 3s infinite;
+}
 .timeline-item {
     position: relative;
     margin: 40px 0;
@@ -450,6 +461,7 @@ body {
 .timeline-item:nth-child(4) { animation-delay: 0.8s; }
 .timeline-item:nth-child(5) { animation-delay: 1.0s}
 .timeline-content {
+   cursor: pointer;
     position: relative;
     width: 45%;
     padding: 30px;
@@ -638,6 +650,10 @@ body {
 }
 @keyframes shine {
     0% { transform: translateX(-100%) translateY(-100%) rotate(45deg); }
+   100% { transform: translateX(100%) translateY(100%) rotate(45deg); }
+}
+@keyframes shines {
+    0% { transform: translateX(-100%) translateY(-100%) rotate(90deg); }
    100% { transform: translateX(100%) translateY(100%) rotate(45deg); }
 }
 /* Responsive Design */
