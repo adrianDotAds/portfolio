@@ -451,17 +451,6 @@ body {
     border-radius: 2px;
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
 }
-.timeline-item::before {
-    content: '';
-    position: absolute;
-    top: 100%;
-    left: -50%;
-    width: 200%;
-    height: 200%;
-    background: linear-gradient(45deg, transparent, rgba(255,255,255,0.3), transparent);
-    transform: rotate(45deg);
-   animation: shines 3s infinite;
-}
 .timeline-item {
     position: relative;
     margin: 40px 0;
@@ -547,6 +536,17 @@ body {
    color: white;
    margin-bottom: 8px;
    border-radius: 25px;
+}
+.job-title::before {
+    content: '';
+    position: absolute;
+    top: -100%;
+    left: -50%;
+    width: 300%;
+    height: 200%;
+    background: linear-gradient(45deg, transparent, rgba(255,255,255,0.3), transparent);
+    transform: rotate(45deg);
+   animation: shines 3s infinite;
 }
 .company {
    font-size: 1.1em;
