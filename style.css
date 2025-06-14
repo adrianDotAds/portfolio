@@ -495,11 +495,11 @@ body {
     right: 0;
     margin-left: 55%;
 }
-.timeline-content-back:nth-child(odd) .timeline-content-back {
+.timeline-item2:nth-child(even) .timeline-content-back {
     left: 0;
     margin-right: 55%;
 }
-.timeline-content-back:nth-child(even) .timeline-content-back {
+.timeline-item2:nth-child(odd) .timeline-content-back {
     right: 0;
     margin-left: 55%;
 }
@@ -558,6 +558,7 @@ body {
    border-radius: 25px;
 }
 .job-title::before {
+   pointer-events: none;
     content: '';
     position: absolute;
     top: -100%;
