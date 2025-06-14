@@ -495,7 +495,11 @@ body {
     right: 0;
     margin-left: 55%;
 }
-.timeline-content-back:nth-child(even) .timeline-content {
+.timeline-content-back:nth-child(odd) .timeline-content-back {
+    left: 0;
+    margin-right: 55%;
+}
+.timeline-content-back:nth-child(even) .timeline-content-back {
     right: 0;
     margin-left: 55%;
 }
