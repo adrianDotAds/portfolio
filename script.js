@@ -20,44 +20,92 @@ for (let i = 0; i < elements.length; i++) {
 // Event listener to check clicks
 document.addEventListener('click', function(event) {
     if (groupedElements[0].includes(event.target)) {
-        // Adding class name
+        // Showing the description after clicking the career card
         const  el = document.getElementsByClassName("timeline-content");
-        el[0].classList.add("roll-out-blurred-left");
+        const  elb = document.getElementsByClassName("timeline-content-back");
+        el[0].classList.add("flip-out-hor-top");
+        setTimeout(() => { 
+            el[0].style.display = "none";
+            elb[0].style.display = "block";
+            elb[0].classList.add("flip-in-hor-bottom");
+         }, 500);
     }
     if (groupedElements[1].includes(event.target)) {
-        // Adding class name
+        // Showing the description after clicking the career card
         const  el = document.getElementsByClassName("timeline-content");
-        el[1].classList.add("roll-out-blurred-right");
+        const  elb = document.getElementsByClassName("timeline-content-back");
+        el[1].classList.add("flip-out-hor-top");
+        setTimeout(() => { 
+            el[1].style.display = "none";
+            elb[1].style.display = "block";
+            elb[1].classList.add("flip-in-hor-bottom");
+         }, 500);
     }
     if (groupedElements[2].includes(event.target)) {
-        // Adding class name
+        // Showing the description after clicking the career card
         const  el = document.getElementsByClassName("timeline-content");
-        el[2].classList.add("roll-out-blurred-left");
+        const  elb = document.getElementsByClassName("timeline-content-back");
+        el[2].classList.add("flip-out-hor-top");
+        setTimeout(() => { 
+            el[2].style.display = "none";
+            elb[2].style.display = "block";
+            elb[2].classList.add("flip-in-hor-bottom");
+         }, 500);
     }
     if (groupedElements[3].includes(event.target)) {
-        // Adding class name
+        // Showing the description after clicking the career card
         const  el = document.getElementsByClassName("timeline-content");
-        el[3].classList.add("roll-out-blurred-right");
+        const  elb = document.getElementsByClassName("timeline-content-back");
+        el[3].classList.add("flip-out-hor-top");
+        setTimeout(() => { 
+            el[3].style.display = "none";
+            elb[3].style.display = "block";
+            elb[3].classList.add("flip-in-hor-bottom");
+         }, 500);
     }
     if (groupedElements[4].includes(event.target)) {
-        // Adding class name
+        // Showing the description after clicking the career card
         const  el = document.getElementsByClassName("timeline-content");
-        el[4].classList.add("roll-out-blurred-left");
+        const  elb = document.getElementsByClassName("timeline-content-back");
+        el[4].classList.add("flip-out-hor-top");
+        setTimeout(() => { 
+            el[4].style.display = "none";
+            elb[4].style.display = "block";
+            elb[4].classList.add("flip-in-hor-bottom");
+         }, 500);
     }
     if (groupedElements[5].includes(event.target)) {
-        // Adding class name
+        // Showing the description after clicking the career card
         const  el = document.getElementsByClassName("timeline-content");
-        el[5].classList.add("roll-out-blurred-right");
+        const  elb = document.getElementsByClassName("timeline-content-back");
+        el[5].classList.add("flip-out-hor-top");
+        setTimeout(() => { 
+            el[5].style.display = "none";
+            elb[5].style.display = "block";
+            elb[5].classList.add("flip-in-hor-bottom");
+         }, 500);
     }
     if (groupedElements[6].includes(event.target)) {
-        // Adding class name
+        // Showing the description after clicking the career card
         const  el = document.getElementsByClassName("timeline-content");
-        el[6].classList.add("roll-out-blurred-left");
+        const  elb = document.getElementsByClassName("timeline-content-back");
+        el[6].classList.add("flip-out-hor-top");
+        setTimeout(() => { 
+            el[6].style.display = "none";
+            elb[6].style.display = "block";
+            elb[6].classList.add("flip-in-hor-bottom");
+         }, 500);
     }
     if (groupedElements[7].includes(event.target)) {
-        // Adding class name
+        // Showing the description after clicking the career card
         const  el = document.getElementsByClassName("timeline-content");
-        el[7].classList.add("roll-out-blurred-right");
+        const  elb = document.getElementsByClassName("timeline-content-back");
+        el[7].classList.add("flip-out-hor-top");
+        setTimeout(() => { 
+            el[7].style.display = "none";
+            elb[7].style.display = "block";
+            elb[7].classList.add("flip-in-hor-bottom");
+         }, 500);
     }
 });
 // Smooth scrolling for navigation links
